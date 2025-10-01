@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "md.utm.pad.grpc";
+
+package broker;
+
+// Serviciul pe care îl va expune Broker-ul
+service BrokerService {
+  // Funcția pe care o vom apela noi, Sender-ul
+  rpc sendMessage (MessageRequest) returns (MessageReply);
+}
+
+// Structura datelor pentru cerere (ce trimitem noi)
+message MessageRequest {
+  string type = 1;
+  string payload = 2;
+}
+
+// Structura datelor pentru răspuns (ce primim înapoi)
+message MessageReply {
+  bool success = 1;
+}

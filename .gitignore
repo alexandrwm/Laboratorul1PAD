@@ -1,0 +1,14 @@
+# Fișiere generate de Maven
+/target/
+.class
+# Fișiere de log
+*.log
+target/
+# Fișiere specifice IDE-urilor
+.idea/
+*.iml
+.vscode/
+
+# Fișiere de sistem de operare
+.DS_Store
+Thumbs.db
