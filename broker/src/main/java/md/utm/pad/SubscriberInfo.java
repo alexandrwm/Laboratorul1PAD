@@ -10,8 +10,7 @@ public class SubscriberInfo {
         this.host = host;
         this.port = port;
     }
-    
-    // Getters
+
     public String getSubscriberId() { return subscriberId; }
     public String getHost() { return host; }
     public int getPort() { return port; }
